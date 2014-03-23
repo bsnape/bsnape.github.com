@@ -2,4 +2,15 @@ permalink: pretty
 paginate: 10
 exclude: ['Rakefile', 'Gemfile', 'Gemfile.lock', 'config.rb', 'run']
 
-production_url: http://jduff.github.com
+production_url: http://bensnape.com
+
+markdown: kramdown
+pygments: false
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  use_coderay: true
