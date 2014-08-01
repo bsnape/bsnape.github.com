@@ -1,35 +1,23 @@
 task :default => :server
 
-desc 'Clean up generated site'
-task :clean do
-end
-
 desc 'Build site with Jekyll'
-task :build => :clean do
-  cpid = compass
-  jpid = jekyll
+task :build do
+  jpid = jekyll('build')
 
-  trap_and_kill cpid, jpid
+  trap_and_kill jpid
 end
 
 desc 'Start server with --auto'
-task :server => :clean do
-  cpid = compass
+task :server do
   jpid = jekyll('serve --watch')
 
-  trap_and_kill cpid, jpid
+  trap_and_kill jpid
 end
 
 
 def jekyll(opts = '')
   fork do
     sh 'jekyll ' + opts
-  end
-end
-
-def compass(opts = '')
-  fork do
-    sh 'compass watch'
   end
 end
 
