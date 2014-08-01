@@ -5,7 +5,7 @@ exclude: ['Rakefile', 'Gemfile', 'Gemfile.lock', 'config.rb', 'run']
 production_url: http://bensnape.com
 
 markdown: kramdown
-highlighter: rouge
+highlighter: pygments
 
 kramdown:
   auto_ids: true
