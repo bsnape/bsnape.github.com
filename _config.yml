@@ -2,6 +2,8 @@ permalink: pretty
 paginate: 10
 exclude: ['Rakefile', 'Gemfile', 'Gemfile.lock', 'config.rb', 'run']
 
+name: BenSnape.com
+description: A blog about software development.
 url: http://bensnape.com
 
 markdown: kramdown
