@@ -2,7 +2,7 @@ permalink: pretty
 paginate: 10
 exclude: ['Rakefile', 'Gemfile', 'Gemfile.lock', 'config.rb', 'run']
 
-production_url: http://bensnape.com
+url: http://bensnape.com
 
 markdown: kramdown
 highlighter: pygments
