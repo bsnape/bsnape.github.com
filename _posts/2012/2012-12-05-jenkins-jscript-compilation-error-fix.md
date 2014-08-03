@@ -13,8 +13,7 @@ This is a problem because the Jenkins slave will not connect until the errors ar
 
 A similar bug was raised here: http://issues.hudson-ci.org/browse/HUDSON-7819 but no resolution was given.
 
-The quick fix
--------------
+### The quick fix
 
 After annoying me for a while I finally managed to suppress the errors.
 
@@ -22,8 +21,7 @@ To make the errors go away, go to Control Panel > Internet Options > Advanced ta
 
 ![Disable Debugging]({{ site.url }}/images/disable-debugging.jpeg)
 
-The long-term solution
-----------------------
+### The long-term solution
 
 Instead of using JNLP I’d recommend master-slave communication using SSH.
 

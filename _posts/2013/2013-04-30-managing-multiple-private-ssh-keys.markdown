@@ -9,8 +9,7 @@ Typically, I would have a single pair of keys which I would use in all cases. So
 
 So what happens when we want to SSH onto a machine using a different key pair?
 
-Manually managing multiple private keys
----------------------------------------
+### Manually managing multiple private keys
 
 Let's assume you've <a href="https://help.github.com/articles/generating-ssh-keys" title="ssh-keygen" target="_blank">already set up new key pairs</a> in your <code>~/.ssh</code> directory. If you <code>ls</code> in that directory, you might see something like this:
 
@@ -30,8 +29,7 @@ $ ssh -i ~/.ssh/jenkins ben.snape@jenkins.itv.com
 
 This does the trick but it's very... <strong>wordy</strong>. Surely we can shorten it?
 
-Introducing SSH config
-----------------------
+### Introducing SSH config
 
 Fortunately, there is a simple way to do this.
 

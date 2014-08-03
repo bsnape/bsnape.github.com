@@ -13,8 +13,7 @@ Eventually, I moved on to another company where I was exclusively using Ruby and
 
 Which brings us to the whole point of this post.
 
-Ruby and Cucumber
------------------
+### Ruby and Cucumber
 
 What I love about Ruby and Cucumber is that the simplicity of each perfectly compliments the other.
 
@@ -26,8 +25,7 @@ It just works.
 
 My personal transition from Java to Ruby has given me food for thought. In the same way that I learnt from my own journey, perhaps Java also can learn from the leanness of Cucumber?
 
-Java vs. Ruby
--------------
+### Java vs. Ruby
 
 I decided to put the idea into practise.
 
@@ -87,8 +85,7 @@ Then /^I get a successful (\w+) response with the correct (\w+)$/ do |type, plat
 end
 {% endhighlight %}
 
-Looking Ahead - The Killer Questions
-------------------------------------
+### Looking Ahead - The Killer Questions
 
 I'm not trying to draw any concrete conclusions but I think the next year or two could be an interesting time for BDD development with regard to Java and Ruby (and possibly other languages).
 

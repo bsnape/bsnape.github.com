@@ -7,8 +7,7 @@ Today I had the quick task of converting an old, internally-hosted Mercurial rep
 
 It was a lot easier than I thought it would be! Hopefully this should help others as it appears there are a number of ways to do this.
 
-The Conversion
---------------
+### The Conversion
 
 First of all, clone the repository you wish to convert.
 
@@ -137,8 +136,7 @@ Removing svn-fast-export.py
 
 We've now finished the conversion and cleanup.
 
-Next Steps
-----------
+### Next Steps
 
 Don't be concerned if you cannot see any files in your newly-converted repository when you try to view them.
 
@@ -181,8 +179,7 @@ Basic.build              Itv.Cms.Dal.UnitTests   Itv.DMZServices     Itv.Web.Uni
 ...
 {% endhighlight %}
 
-Pushing to GitHub
------------------
+### Pushing to GitHub
 
 First, create an empty repository in GitHub.
 

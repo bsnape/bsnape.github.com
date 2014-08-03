@@ -14,8 +14,7 @@ which ultimately slows everyone down.
 
 Fortunately there are number of improvements we can make for both Ruby and other languages.
 
-Language-agnostic colours
--------------------------
+### Language-agnostic colours
 
 The first step is to install the [Jenkins AnsiColor plugin](https://wiki.jenkins-ci
 .org/display/JENKINS/AnsiColor+Plugin).
@@ -30,8 +29,7 @@ You have to enable colours for each job that you want to see colours for.
 
 You should now be running with basic colour output. Great.
 
-RSpec colours
--------------
+### RSpec colours
 
 To get RSpec colours working in Jenkins you have to specify the following in the RSpec configuration block:
 
@@ -47,8 +45,7 @@ Looking good.
 
 ![Rspec Colours]({{ site.url }}/images/jenkins-coloured-output/4.png)
 
-Ruby colours (colorize gem)
----------------------------
+### Ruby colours (colorize gem)
 
 If you want to get some really sweet colour action going on like this:
 
@@ -83,8 +80,7 @@ Now you just need to use `colorize` in your Ruby code...
 puts "hello there".colorize(:red)
 {% endhighlight %}
 
-Picking the colours to use
---------------------------
+### Picking the colours to use
 
 Here's a really handy tip if you want to experiment with which colours work best for you.
 

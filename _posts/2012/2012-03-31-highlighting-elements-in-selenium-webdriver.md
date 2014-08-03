@@ -12,8 +12,7 @@ way, you can build the project yourself, see a “real-life” example and tinke
 
 I’d like to thank Iain for his [blog post](http://nthrbldyblg.blogspot.co.uk/2011/11/highlighting-elements-in-webdriver.html) on highlighting elements.
 
-Getting Started
----------------
+### Getting Started
 
 First of all – if you are building an automation framework at your organisation – it’s sometimes a good idea to wrap certain WebDriver calls through a bespoke, lightweight common library.
 
@@ -118,8 +117,7 @@ It’s not the prettiest code but the effect is pretty cool.
 
 You could parametrise the colours if you wanted to. I also feel that the wait time is enough to clearly notice what’s going on without slowing tests down too much.
 
-Using it in your code.
-----------------------
+### Using it in your code.
 
 I have a [working example](https://github.com/bsnape/webdriver-highlight) in a GitHub repository. You just need Maven and Firefox installed.
 

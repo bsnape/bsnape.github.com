@@ -9,8 +9,7 @@ The basic premise is that if you are repeatedly checking if an object is a type 
 
 Ultimately, you should be trying to implement each <a href="http://en.wikipedia.org/wiki/Solid_(object-oriented_design)" title="SOLID" target="_blank">fundamental OOP concept (SOLID)</a> - <em>pragmatically of course</em>, as over-engineering a solution is just as poor practise.
 
-Why Should We Do This?
-----------------------
+### Why Should We Do This?
 
 The main benefits (taken from the Tech Talk slides) are threefold:
 
@@ -19,8 +18,7 @@ The main benefits (taken from the Tech Talk slides) are threefold:
 * Polymorphic systems are easier to maintain (and extend) - again, refer to the <a href="http://en.wikipedia
 .org/wiki/Open/closed_principle" title="Open/Closed Principle" target="_blank">Open/Closed Principle</a>
 
-An Example
-----------
+### An Example
 
 I'm going to adapt a non-production code (i.e. test code) refactor I recently worked on.
 
@@ -28,8 +26,7 @@ My main responsibility is to look after ITV's (exposed) back-end systems, includ
 
 So of course, it is necessary to test that platform-specific things work on the intended platforms only.
 
-The <del>wrong way</del> fast way to complexity and technical debt
-------------------------------------------------------------------
+### The <del>wrong way</del> fast way to complexity and technical debt
 
 Here's a basic scenario that I've already given some background on above:
 
@@ -75,8 +72,7 @@ end
 
 I think it's implementations like this that give tools like Cucumber and its proponents a bad name. The step implementations are littered with conditional logic, unnecessary passing through of variables to various classes and a significant number of instance variables (compared to local variables).
 
-Refactoring and removing the conditional logic
-----------------------------------------------
+### Refactoring and removing the conditional logic
 
 A much better approach is to properly model your domain (yes, even with testing).
 
@@ -167,8 +163,7 @@ As a result of this new design, it is so easy to see the generic and specific be
 
 I've deliberately left out the Mercury classes as they could contain some commercially sensitive information (especially the stuff around adverts). With that aside, the Mercury response class was a really important refactor as it encapsulates all the tricky xpaths and regular expression parsing of the SOAP response in one place. Again, for any platform-specific behaviour it was just a case of creating a concrete subclass of <code>Mercury::Response</code> to implement the differences.
 
-Staying Out of Trouble
-----------------------
+### Staying Out of Trouble
 
 There is always a fine line between meaningful concrete subclassing that aids understanding versus runaway subclassing and getting caught in an inheritance nightmare.
 
@@ -176,8 +171,7 @@ Base (abstract) classes are a Ruby anti-pattern, yet are embraced by the Java co
 
 Indeed, in statically typed languages there can be lots of boiler plate code which is ripe for inheritance. However, unless you're a fairly experienced developer who is deft with an IDE then it's so easy to become entangled amongst so many interfaces and implementations that you don't know which way is up (I know because I've been in that situation before).
 
-Final Thoughts
---------------
+### Final Thoughts
 
 The concept of complete if-less programming has certainly left an impression on me. Not that I didn't know that having good OO principles was desirable when designing software, I simply wasn't <em>aware</em> that there was a movement around this concept.
 
