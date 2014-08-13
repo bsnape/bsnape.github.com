@@ -66,6 +66,12 @@ h1 a, h2 a {
     padding-bottom: 0px;
 }
 
+.post img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .paging {
     padding: 20px 0px;
 }
