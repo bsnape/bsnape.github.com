@@ -87,7 +87,7 @@ timestamp from the last `after` hook (or from the intial `before(:suite)` hook i
 class GlobalDateTime
   @@start_time = Time.now
 
-  def self.start_time
+  def start_time
     @@start_time
   end
 end
@@ -115,4 +115,21 @@ RSpec.configure do |config|
   end
 
 end
+{% endhighlight %}
+
+Alternatively, you can change `start_time` to be a class method instead:
+
+{% highlight ruby %}
+def self.start_time
+  @@start_time
+end
+{% endhighlight %}
+
+Which means that you can use `start_time` directly on the `GlobalDateTime` class, rather than creating a new instance
+first:
+
+{% highlight ruby %}
+...
+  from: GlobalDateTime.start_time.strftime(date_format),
+...
 {% endhighlight %}
