@@ -9,7 +9,7 @@ end
 
 desc 'Start server with --auto'
 task :server do
-  jpid = jekyll('serve --watch')
+  jpid = jekyll('serve --watch --host localhost --port 4000')
 
   trap_and_kill jpid
 end
