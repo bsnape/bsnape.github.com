@@ -40,20 +40,33 @@ The goals of universal logging, graphing, trending and alerting are strong drive
 
 #### Introducing Sensu
 
-Let's take a look at how you can run your infrastructure tests and raise alerts for failures.
-The tests don't have to be complex - you can even re-use your existing BDD tests from your Continuous Delivery pipeline!
-
 [Sensu](http://sensuapp.org/docs/0.16/overview) is an open-source monitoring framework designed with the cloud in mind. Taken straight from the documentation:
 
 > Sensu takes the results of “check” scripts run across many systems, and if certain conditions are met; passes their information to one or more “handlers”. Checks are used, for example, to determine if a service like Apache is up or down. Checks can also be used to collect data, such as MySQL query statistics or Rails application metrics. Handlers take actions, using result information, such as sending an email, messaging a chat room, or adding a data point to a graph.
 
-Sensu provides an [open-source repository](https://github.com/sensu/sensu-community-plugins) which contains a large number of "checks" and "metrics" which you can use. Sensu also supports any existing [Nagios plugins](http://www.nagios.org/) that you might have.
+From my experience of using Sensu for the past few months across all ITV's AWS environments (including Production), I can confirm that it's a really awesome tool.
+It's much more powerful, configurable and easy-to-use than Zabbix or Nagios.
 
-All we need now is a Sensu "check" to run our infrastructure-tests. Luckily, [here's one I made earlier](https://github.com/sensu/sensu-community-plugins/blob/master/plugins/rspec/check-rspec.rb) for running RSpec tests.
+Sensu provides an [open-source repository](https://github.com/sensu/sensu-community-plugins) which contains a large number of "checks" and "metrics" which you can use. You can also use any existing [Nagios plugins](http://www.nagios.org/) that you might have.
+
+You can fully configure Sensu using [Puppet](https://github.com/sensu/sensu-puppet) or [Chef](https://github.com/sensu/sensu-chef) (we use the former).
+
+It also provides an API which also allows you to configure different dashboards e.g. [Uchiwa](https://github.com/sensu/uchiwa).
 
 
-#### Running Infrastructure Tests
-I have a [working example](https://github.com/bsnape/sensu-rspec-integration) where you can see Sensu running some failing RSpec tests and consequently raising alerts.
+#### A Working Example
+Let's take a look at how you can run your infrastructure tests and raise alerts for failures.
+
+For this we need:
+
+ * some tests to run
+ * a Sensu server
+ * a Sensu client
+ * a Sensu "check" to run our tests
+
+Fortunately, [I already wrote an RSpec Sensu check plugin!](https://github.com/sensu/sensu-community-plugins/blob/master/plugins/rspec/check-rspec.rb)
+
+I have a [working example](https://github.com/bsnape/sensu-rspec-integration) that contains all the above where you can see Sensu running some failing RSpec tests and consequently raising alerts.
 
 Once you have the Vagrant VMs up and running you can see the (deprecated) Sensu dashboard with the alerts:
 
