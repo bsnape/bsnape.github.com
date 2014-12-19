@@ -13,6 +13,7 @@ This isn't necessarily a bad thing - roles and responsibilities are clearly defi
 But it does help reinforce the Engineering-Operations divide of "we build it, you run it".
 
 ![The Engineering-Operations Divide]({{ site.url }}/images/infrastructure-testing-with-sensu-and-rspec/the_divide.png)
+<center>[1] <em>Metrics by coda hale : to know your app’ health - Izzet Mustafaiev</em></center>
 
 
 #### Shared Responsibility
@@ -36,6 +37,7 @@ This can aid troubleshooting complicated edge-cases such as message queuing, rac
 The goals of universal logging, graphing, trending and alerting are strong drivers for both teams, helping to expose, debug and fix issues.
 
 ![Shared Responsibility]({{ site.url }}/images/infrastructure-testing-with-sensu-and-rspec/shared_responsibility.png)
+<center>[2] <em>Metrics-Driven Engineering - Mike Brittain</em></center>
 
 
 #### Introducing Sensu
@@ -75,4 +77,14 @@ Once you have the Vagrant VMs up and running you can see the (deprecated) Sensu 
 
 ##### Credits
 
-Thanks to Rob Taylor for the first two images.
+Thanks to Michael Richardson[3] for originally coming up with a similar idea (Sensu + Serverspec).
+
+Thanks to Graham Taylor[4] for the Sensu Serverspec plugin which I based my Sensu Rspec plugin on.
+
+Thanks to Rob Taylor[5] for replicating the first two images ([1] and [2] respectively).
+
+* [1] [Metrics by coda hale : to know your app’ health - Izzet Mustafaiev](http://www.slideshare.net/IzzetMustafaiev/metrics-by-coda-hale)
+* [2] [Metrics-Driven Engineering - Mike Brittain](http://www.slideshare.net/mikebrittain/metricsdriven-engineering)
+* [3] [Serverspec and Sensu - Testing and Monitoring collide - Michael Richardson](http://www.slideshare.net/m_richardson/serverspec-and-sensu-testing-and-monitoring-collide)
+* [4] [Serverspec Sensu plugin - Graham Taylor (@tayzlor)](https://github.com/sensu/sensu-community-plugins/commit/2f4c665be2c56983d4df85981f5e89f389d0083f)
+* [5] [Rob Taylor](http://www.rctaylor.co.uk/)
