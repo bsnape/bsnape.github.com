@@ -5,7 +5,7 @@
 /*@import "compass/reset";*/
 html, body, .container, .row, .main {
     min-height: 100%;
-    background: #919191;
+    background: #F5F5F5;
 }
 
 code {
