@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Monitoring Varnish Backends via Graphite with Sensu: Part 1"
+title: "Monitoring Microservices via Graphite with Sensu: Part 1"
 ---
 
 For the past 2 years I've been been part of the team replacing ITV's legacy systems with microservices hosted in AWS.
