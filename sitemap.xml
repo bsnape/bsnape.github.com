@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://bensnape.com/</loc>
+  <lastmod>2015-04-08T13:08:55+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://bensnape.com/about/</loc>
+  <lastmod>2015-04-08T13:08:55+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://bensnape.com/archives/</loc>
+  <lastmod>2015-04-08T13:08:55+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://bensnape.com/2015/04/07/monitoring-microservices-via-graphite-with-sensu-part-1/</loc>
+  <lastmod>2015-04-08T13:08:55+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://bensnape.com/2014/12/08/infrastructure-testing-with-sensu-and-rspec/</loc>
+  <lastmod>2015-04-08T13:08:55+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://bensnape.com/2014/08/26/using-ruby-metaprogramming-to-output-timestamped-kibana-logs-in-your-rspec-tests/</loc>
+  <lastmod>2015-04-08T13:08:55+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://bensnape.com/2014/08/13/introducing-eir-a-url-status-checker/</loc>
+  <lastmod>2015-04-08T13:08:55+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://bensnape.com/2014/08/04/defining-custom-matchers-in-rspec/</loc>
+  <lastmod>2015-04-08T13:08:55+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://bensnape.com/2014/08/01/rspec-after-failure-hook/</loc>
+  <lastmod>2015-04-08T13:08:55+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://bensnape.com/2014/03/23/coloured-output-in-jenkins/</loc>
+  <lastmod>2015-04-08T13:08:55+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://bensnape.com/2013/04/30/managing-multiple-private-ssh-keys/</loc>
+  <lastmod>2015-04-08T13:08:55+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://bensnape.com/2013/04/28/if-less-programming/</loc>
+  <lastmod>2015-04-08T13:08:55+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://bensnape.com/2013/04/08/converting-a-mercurial-repository-to-git/</loc>
+  <lastmod>2015-04-08T13:08:55+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://bensnape.com/page2/</loc>
+  <lastmod>2015-04-08T13:08:55+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://bensnape.com/2012/12/29/thoughts-on-cucumber-jvm/</loc>
+  <lastmod>2015-04-08T13:08:55+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://bensnape.com/2012/12/05/jenkins-jscript-compilation-error-fix/</loc>
+  <lastmod>2015-04-08T13:08:55+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://bensnape.com/2012/11/20/manual-ruby-gem-version-management-in-non-ruby-projects/</loc>
+  <lastmod>2015-04-08T13:08:55+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://bensnape.com/2012/03/31/highlighting-elements-in-selenium-webdriver/</loc>
+  <lastmod>2015-04-08T13:08:55+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+</urlset>
