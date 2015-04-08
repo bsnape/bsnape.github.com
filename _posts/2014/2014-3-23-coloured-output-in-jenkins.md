@@ -7,7 +7,7 @@ Everyone knows that looking at the Jenkins logs to figure out why a build failed
 
 You're usually presented with a wall of text which you need to wade through.
 
-![Horrible Jenkins log]({{ site.url }}/images/jenkins-coloured-output/1.png)
+![Horrible Jenkins log]({{ site.url }}/images/jenkins-coloured-output/1.jpeg)
 
 Builds that look like this are difficult for members in a cross-functional team to investigate,
 which ultimately slows everyone down.
@@ -21,11 +21,11 @@ The first step is to install the [Jenkins AnsiColor plugin](https://wiki.jenkins
 
 Once you've done that, make sure the xterm colours are present in the Jenkins configuration screen.
 
-![AnsiColor Setup]({{ site.url }}/images/jenkins-coloured-output/2.png)
+![AnsiColor Setup]({{ site.url }}/images/jenkins-coloured-output/2.jpeg)
 
 You have to enable colours for each job that you want to see colours for.
 
-![AnsiColor job]({{ site.url }}/images/jenkins-coloured-output/3.png)
+![AnsiColor job]({{ site.url }}/images/jenkins-coloured-output/3.jpeg)
 
 You should now be running with basic colour output. Great.
 
@@ -43,13 +43,13 @@ This is because the Jenkins shell is a pseudo TTY.
 
 Looking good.
 
-![Rspec Colours]({{ site.url }}/images/jenkins-coloured-output/4.png)
+![Rspec Colours]({{ site.url }}/images/jenkins-coloured-output/4.jpeg)
 
 ### Ruby colours (colorize gem)
 
 If you want to get some really sweet colour action going on like this:
 
-![Ruby colours]({{ site.url }}/images/jenkins-coloured-output/5.png)
+![Ruby colours]({{ site.url }}/images/jenkins-coloured-output/5.jpeg)
 
 You have to do a couple of things.
 
@@ -92,9 +92,9 @@ ruby -r rubygems -e "class IO; def isatty; true; end; end;" -e "require 'coloriz
 
 Now run it...et voila!
 
-![Colorize matrix]({{ site.url }}/images/jenkins-coloured-output/6.png)
+![Colorize matrix]({{ site.url }}/images/jenkins-coloured-output/6.jpeg)
 
 Finally, if you're feeling really helpful you can provide your team members with a glossary of what each colour means
 in your build:
 
-![Colour glossary]({{ site.url }}/images/jenkins-coloured-output/7.png)
+![Colour glossary]({{ site.url }}/images/jenkins-coloured-output/7.jpeg)

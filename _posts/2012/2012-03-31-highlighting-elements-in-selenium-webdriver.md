@@ -5,7 +5,7 @@ title: Highlighting Elements in Selenium WebDriver
 
 Here's how you can highlight elements in the browser using Selenium WebDriver with Java.
 
-![WebDriver Highlight in action]({{ site.url }}/images/webdriver-highlight.png)
+![WebDriver Highlight in action]({{ site.url }}/images/webdriver-highlight.jpeg)
 
 If you want to skip ahead, I’ve got a working example in a [GitHub repo](https://github.com/bsnape/webdriver-highlight) that uses JBehave as the test runner. This
 way, you can build the project yourself, see a “real-life” example and tinker with it.

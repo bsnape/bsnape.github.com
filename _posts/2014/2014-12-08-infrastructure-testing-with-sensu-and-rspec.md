@@ -12,7 +12,7 @@ However, when it comes to the production environment, Operations typically have 
 This isn't necessarily a bad thing - roles and responsibilities are clearly defined for good reason.
 But it does help reinforce the Engineering-Operations divide of "we build it, you run it".
 
-![The Engineering-Operations Divide]({{ site.url }}/images/infrastructure-testing-with-sensu-and-rspec/the_divide.png)
+![The Engineering-Operations Divide]({{ site.url }}/images/infrastructure-testing-with-sensu-and-rspec/the_divide.jpeg)
 <center>[1] <em>Metrics by coda hale : to know your app’ health - Izzet Mustafaiev</em></center>
 
 
@@ -36,7 +36,7 @@ This can aid troubleshooting complicated edge-cases such as message queuing, rac
 
 The goals of universal logging, graphing, trending and alerting are strong drivers for both teams, helping to expose, debug and fix issues.
 
-![Shared Responsibility]({{ site.url }}/images/infrastructure-testing-with-sensu-and-rspec/shared_responsibility.png)
+![Shared Responsibility]({{ site.url }}/images/infrastructure-testing-with-sensu-and-rspec/shared_responsibility.jpeg)
 <center>[2] <em>Metrics-Driven Engineering - Mike Brittain</em></center>
 
 
@@ -72,7 +72,7 @@ I have a [working example](https://github.com/bsnape/sensu-rspec-integration) th
 
 Once you have the Vagrant VMs up and running you can see the (deprecated) Sensu dashboard with the alerts:
 
-![Sensu Dashboard]({{ site.url }}/images/infrastructure-testing-with-sensu-and-rspec/sensu_dashboard.png)
+![Sensu Dashboard]({{ site.url }}/images/infrastructure-testing-with-sensu-and-rspec/sensu_dashboard.jpeg)
 
 
 ##### Credits

@@ -33,7 +33,7 @@ However, in reality, it's not uncommon for individual health probes to fail. Thi
 
 &nbsp;
 
-  ![Microservice health ripple-effect]({{ site.url }}/images/monitoring-varnish-backends-via-graphite-with-sensu/microservices_unhealthy.png )
+  ![Microservice health ripple-effect]({{ site.url }}/images/monitoring-varnish-backends-via-graphite-with-sensu/microservices_unhealthy.jpeg )
   <center><em>The microservice health ripple-effect</em></center>
 
 &nbsp;
