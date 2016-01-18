@@ -167,16 +167,16 @@ You can read more about Terraform module sources in the [official documentation]
 ## Other Considerations and Limitations
 
 If you need to support multiple different versions of the same module (an incremental upgrade for instance), the Ruby/Rake implementation
-above takes the `Terrafile` key name into account. For example, the following will be deployed to `vendor/modules/vpc-0.1.1` and
-`vendor/modules/vpc-1.1.0` respectively.
+above takes the `Terrafile` key name into account. For example, the following will be deployed to `vendor/modules/vpc-0.0.1` and
+`vendor/modules/vpc-2.0.0` respectively.
 
 {% highlight go %}
-vpc-0.1.1:
+vpc-0.0.1:
  source:  "git@github.com:ITV/tf-aws-vpc"
- version: "v0.1.1"
-vpc-1.0.0:
+ version: "v0.0.1"
+vpc-2.0.0:
  source:  "git@github.com:ITV/tf-aws-vpc"
- version: "v1.0.0"
+ version: "v2.0.0"
 {% endhighlight %}
 
 Additionally, the deletion and subsequent fetching of the Terrafile modules is very simplistic. Each time `rake get_modules` is executed, all cached
