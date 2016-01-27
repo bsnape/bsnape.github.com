@@ -3,6 +3,9 @@ layout: post
 title: "Terraform Design Patterns: the Terrafile"
 ---
 
+<em> Special thanks to my colleague [Efstathios Xagoraris](https://github.com/xiii), who laid the original foundations for this concept,
+as well as the rest of the team at ITV for their valued input.</em>
+
 ## Introduction
 
 Taken straight from the documentation, [Terraform](https://www.terraform.io/)
