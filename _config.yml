@@ -7,7 +7,7 @@ description: A blog about software development.
 url: http://bensnape.com
 
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 
 kramdown:
   auto_ids: true
@@ -15,4 +15,7 @@ kramdown:
   entity_output: as_char
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
-  use_coderay: true
+  enable_coderay: true
+
+# Gems
+gems: [jekyll-paginate]
